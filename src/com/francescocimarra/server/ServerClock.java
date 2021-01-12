@@ -1,4 +1,4 @@
-package com.francescocimarra;
+package com.francescocimarra.server;
 
 import java.io.IOException;
 import java.io.OutputStream;
