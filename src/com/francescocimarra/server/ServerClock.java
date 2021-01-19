@@ -30,10 +30,10 @@ public class ServerClock {
 				sOUT = new PrintWriter(out);
 				// invia l'informazione al client
 				Date oggi = new Date();
-				String info = oggi.toString();
+				//String info = oggi.toString();
 				String commento = " creato da francesco."; 
 				
-				SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'");
+				//SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'");
 				
 				SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 				String strDate= formatter.format(oggi);  
