@@ -5,6 +5,7 @@ import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 //import java.sql.Date;
 
@@ -30,7 +31,15 @@ public class ServerClock {
 				// invia l'informazione al client
 				Date oggi = new Date();
 				String info = oggi.toString();
-				sOUT.println(info);
+				String commento = " creato da francesco."; 
+				
+				SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'");
+				
+				SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+				String strDate= formatter.format(oggi);  
+			    System.out.println(strDate + " terza stampa"); 
+				   
+			    sOUT.println(strDate + commento);
 				sOUT.close();
 				System.out.println("Connessione chiusa.");
 
